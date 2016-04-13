@@ -131,6 +131,6 @@ class CurrencyTest extends \PHPUnit_Framework_TestCase
      */
     public function testSubUnitCanBeRetrieved(Currency $c)
     {
-        $this->assertEquals(50, $c->getSubUnit());
+        $this->assertEquals(100, $c->getSubUnit());
     }
 }

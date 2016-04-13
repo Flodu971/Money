@@ -147,7 +147,7 @@ class MoneyTest extends \PHPUnit_Framework_TestCase
         $b = new Money(2, new Currency('EUR'));
         $c = $a->add($b);
 
-        $this->assertEquals(1, $a->getAmount());
+        $this->assertEquals(0, $a->getAmount());
         $this->assertEquals(2, $b->getAmount());
         $this->assertEquals(3, $c->getAmount());
     }
